@@ -1,10 +1,10 @@
 #vim: set fileencoding=utf8
-###
+#
 # METAR supybot plugin
 #
-# written on Dec 2010 by louk
+# written originally on Dec 2010 by louk
+# improved by nuteater
 # published under 'do whatever you want'-license
-###
 
 from supybot.commands import *
 import supybot.callbacks as callbacks

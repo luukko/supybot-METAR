@@ -1,10 +1,8 @@
-###
 # METAR supybot plugin
 #
-# written on Dec 2010 by louk
+# written originally on Dec 2010 by louk
+# improved by nuteater
 # published under 'do whatever you want'-license
-###
 
-METAR - supybot metar wrapper
+METAR - supybot metar plugin
 Prints weather report about <station> to IRC with PRIVMSG (works with MSG or on channels).
-

@@ -1,9 +1,8 @@
-###
 # METAR supybot plugin
 #
-# written on Dec 2010 by louk
+# written originally on Dec 2010 by louk
+# improved by nuteater
 # published under 'do whatever you want'-license
-###
 
 import supybot.conf as conf
 
