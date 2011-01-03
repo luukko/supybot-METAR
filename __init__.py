@@ -35,7 +35,7 @@ reload(plugin) # In case we're being reloaded.
 if world.testing:
     import test
 
-Class = plugin.Class
+Class = plugin.METAR
 configure = config.configure
 
 

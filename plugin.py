@@ -50,5 +50,3 @@ class METAR(callbacks.Plugin):
 
 	# at last the wrapper..
 	metar = wrap(metar, [optional(("literal", ("raw", "basic", "extended"), 'argument parse error')), 'something'])
-
-Class = METAR
