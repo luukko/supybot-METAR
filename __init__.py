@@ -11,10 +11,13 @@ wrapper for METAR data fetcher and parser
 import supybot
 import supybot.world as world
 
-__version__ = "0.1"
-__author__ = "louk"
-__contributors__ = {}
-__url__ = '' # 'github/anza/supybot-metar'
+nuteater = supybot.Author("Perttu Luukko", "Nuteater")
+louk = supybot.Author("louk")
+
+__version__ = "0.2"
+__author__ = nuteater
+__contributors__ = { louk: ["original version"] }
+__url__ = 'https://github.com/nuteater/supybot-METAR/'
 
 import config
 import plugin
