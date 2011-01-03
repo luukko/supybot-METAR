@@ -44,6 +44,5 @@ class METAR(callbacks.Plugin):
 
 		# we get reply!
 		irc.reply(output, prefixNick=False)
-
 	# at last the wrapper..
 	metar = wrap(metar, [optional(("literal", ("raw", "basic", "extended"), 'argument parse error')), 'something'])
