@@ -77,7 +77,8 @@ def format_report(report, format_level):
              "visibility" : obs.visibility(units="m"),
              "sky": obs.sky_conditions(),
              "remarks": obs.remarks(),
-             "precipitation": obs.precip_1hr.string("cm") if obs.precip_1hr else None}
+             "precipitation": obs.precip_1hr.string("cm") if obs.precip_1hr else None,
+             "trend": obs.trend() }
     # Compile format string based on format level
     format_string = "%(station)s at %(time)s: %(temp)s"
     if data["weather"]:
@@ -98,6 +99,8 @@ def format_report(report, format_level):
             format_string += ", precipitation %(precipitation)s"
         if data["remarks"]:
             format_string += ", remarks: %(remarks)s"
+        if data["trend"]:
+            format_string += ", trend: %(trend)s"
     return format_string % data
 
 class METAR(callbacks.Plugin):
