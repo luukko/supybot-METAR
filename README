@@ -6,3 +6,6 @@
 
 METAR - supybot metar plugin
 Prints weather report about <station> to IRC with PRIVMSG (works with MSG or on channels).
+
+Requires the metar python module from http://pypi.python.org/pypi/metar/.
+Tested with metar-1.4.0.
