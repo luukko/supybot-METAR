@@ -21,7 +21,7 @@ class ReportNotFoundError(Exception):
         self.url = url
         self.station = station
     def __str__(self):
-        print "METAR report for %s not found at %s" % (self.station, self.url)
+        return "Error: METAR report for %s not found at %s" % (self.station, self.url)
 
 def get_report(station):
     """Fetch a METAR report for given station code via http."""
@@ -114,7 +114,11 @@ class METAR(callbacks.Plugin):
         # convert station to uppercase
         station = station.upper()
         # fetch METAR report
-        report = get_report(station)
+        try:
+            report = get_report(station)
+        except ReportNotFoundError as error_report:
+            irc.reply(error_report)
+            return
         # parse reptype
         if reptype == "short":
             format_level = 1
