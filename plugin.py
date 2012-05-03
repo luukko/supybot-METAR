@@ -47,9 +47,9 @@ def format_report(report, format_level):
     # only print the time
     timeobj = obs.time
     if timeobj.date() == datetime.now().date():
-        timestring = timeobj.strftime("%H:%M")
+        timestring = timeobj.strftime("%H:%MZ")
     else:
-        timestring = timeobj.strftime("%Y-%m-%d %H:%M")
+        timestring = timeobj.strftime("%Y-%m-%d %H:%MZ")
     # Create useful representation of wind conditions
     if obs.wind_speed == None:
         windstring = None
