@@ -14,7 +14,7 @@ import supybot.world as world
 nuteater = supybot.Author("Perttu Luukko", "Nuteater")
 louk = supybot.Author("louk")
 
-__version__ = "0.2"
+__version__ = "0.2.1"
 __author__ = nuteater
 __contributors__ = { louk: ["original version"] }
 __url__ = 'https://github.com/nuteater/supybot-METAR/'
